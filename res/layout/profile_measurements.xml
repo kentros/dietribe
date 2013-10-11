@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_horizontal"
+                android:scrollbars="vertical|horizontal"> 
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:stretchColumns="1">
+
+   <TableRow>
+       <TextView
+           android:text="Target Daily Calorie Intake"
+           android:textStyle="bold"
+           android:padding="3dip" />
+
+       <EditText android:id="@+id/calorie_intake"
+           android:text=""
+           android:padding="3dip"
+           android:scrollHorizontally="true"
+           android:background="@android:drawable/editbox_background" />
+   </TableRow>
+
+   <TableRow
+       android:gravity="right">
+
+       <Button android:id="@+id/searchbutton"
+           android:text="@string/finish" />
+   </TableRow>
+</TableLayout>
+</ScrollView>

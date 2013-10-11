@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="3dip">
+
+
+	<TextView
+            android:id="@+id/name_label"
+            android:text=""
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	/>
+	
+        	
+    <EditText android:id="@+id/qty"
+    		android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+           android:text="1"
+           android:padding="3dip"
+           android:layout_below="@id/name_label" />
+           
+           <TextView
+            android:id="@+id/X"
+            android:text="@string/X"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_toRightOf="@id/qty"
+        	android:layout_below="@id/name_label"
+        	android:layout_alignBottom="@id/qty"
+        	android:gravity="bottom" 
+        	 />
+
+        <Spinner android:id="@+id/servingsize"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_below="@id/name_label"
+        	android:layout_toRightOf="@id/X"
+        	android:drawSelectorOnTop="true" />
+
+	<Button
+        android:id="@+id/addbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="3dip"
+        android:layout_below="@id/servingsize"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/add" />
+	<Button
+        android:id="@+id/donebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="3dip"
+        android:layout_below="@id/addbutton"
+        android:text="@string/done" />
+    
+</RelativeLayout>

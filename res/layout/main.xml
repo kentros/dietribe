@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="3dip">
+  
+    <Button android:id="@+id/currentdate"
+          style="?android:attr/buttonStyleSmall"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/date" />
+          
+    
+        <ProgressBar android:id="@+id/progress_horizontal"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:padding="3dip"
+        android:max="100"
+        android:progress="50"
+        android:secondaryProgress="0"
+         />
+         
+    <TextView
+        android:id="@+id/calories"
+        android:background="@drawable/blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/progress_horizontal"
+        android:text="@string/calories" />
+        
+    
+         
+         <TextView
+        android:id="@+id/dailysummary"
+        android:background="@drawable/blue"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:layout_above="@id/progress_horizontal"
+        android:layout_toRightOf="@id/calories"
+        android:text="@string/calories_summary"/>
+  
+    
+        
+        
+    <Button
+        android:id="@+id/meals_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_above="@id/calories"
+        android:text="@string/add_meal" />
+        
+	<Button
+        android:id="@+id/exercise_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_above="@id/calories"
+		android:layout_toRightOf="@id/meals_button"
+        android:text="@string/add_exercise" />
+        
+    
+    <Button
+        android:id="@+id/profile_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_above="@id/calories"
+		android:layout_toRightOf="@id/exercise_button"
+        android:text="@string/profile" />
+        
+	<Button
+        android:id="@+id/tools_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_above="@id/calories"
+		android:layout_toRightOf="@id/profile_button"
+        android:text="@string/dashboard" />
+    
+
+	
+   	<ListView android:id="@+id/android:list"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_above="@id/meals_button"
+          android:layout_below="@id/currentdate" />
+          
+    <TextView android:id="@+id/android:empty"
+          android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_below="@id/currentdate"
+        	android:layout_above="@id/meals_button"
+        	android:text="" />
+        	
+
+
+
+</RelativeLayout>

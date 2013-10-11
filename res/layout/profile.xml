@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_horizontal"
+                android:scrollbars="vertical|horizontal"> 
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:stretchColumns="1">
+
+   <TableRow>
+       <TextView
+           android:text="@string/name"
+           android:textStyle="bold"
+           android:padding="3dip" />
+
+       <EditText android:id="@+id/name"
+           android:text=""
+           android:padding="3dip"
+           android:scrollHorizontally="true"
+           android:gravity="center_vertical"
+           android:capitalize="words"
+           android:background="@android:drawable/editbox_background" />
+   </TableRow>
+
+   <TableRow>
+       <TextView
+           android:text="@string/age"
+           android:textStyle="bold"
+           android:padding="3dip" />
+
+       <EditText android:id="@+id/age"
+           android:text=""
+           android:padding="3dip"
+           android:scrollHorizontally="true"
+           android:background="@android:drawable/editbox_background" />
+   </TableRow>
+   
+   <TableRow>
+       <TextView
+           android:text="@string/height"
+           android:textStyle="bold"
+           android:padding="3dip" />
+
+       <EditText android:id="@+id/heightfeet"
+           android:text=""
+           android:padding="3dip"
+           android:scrollHorizontally="false"
+           android:background="@android:drawable/editbox_background" />   
+   </TableRow>
+   
+   <TableRow>
+       <TextView
+           android:text="@string/weight"
+           android:textStyle="bold"
+           android:padding="3dip" />
+
+       <EditText android:id="@+id/weight"
+           android:text=""
+           android:padding="3dip"
+           android:scrollHorizontally="true"
+           android:background="@android:drawable/editbox_background" />
+   </TableRow>
+   
+   <TableRow>
+       <TextView
+           android:text="@string/gender"
+           android:textStyle="bold"
+           android:padding="3dip" />
+
+       <Spinner android:id="@+id/spinner1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="true" />
+   </TableRow>
+   
+   <TableRow>
+       <TextView
+           android:text="@string/activity_level"
+           android:textStyle="bold"
+           android:padding="3dip" />
+           
+       <Spinner android:id="@+id/activity_level"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="true" />
+   </TableRow>
+
+   <TableRow
+       android:gravity="right">
+
+       <Button android:id="@+id/next"
+           android:text="@string/next" />
+   </TableRow>
+</TableLayout>
+</ScrollView>

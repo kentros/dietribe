@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_horizontal"
+                android:scrollbars="vertical|horizontal"> 
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:stretchColumns="1">
+   <TableRow>
+       <TextView
+       	   android:id="@+id/protein_progress_grams"
+           android:text="@string/protein"
+           android:textStyle="bold"
+           android:padding="3dip" />
+           
+     <ProgressBar android:id="@+id/progress_protein"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="200dip"
+        android:max="100"
+         />
+         <TextView
+           android:id="@+id/protein_progress_percent"
+           android:text="@string/nutrient_progress"
+           android:textStyle="bold"
+           android:padding="3dip" />
+   </TableRow>
+   <TableRow>
+       <TextView
+           android:id="@+id/carb_progress_grams"
+           android:text="@string/totalcarb"
+           android:textStyle="bold"
+           android:padding="3dip" />
+           
+     <ProgressBar android:id="@+id/progress_carb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="200dip"
+        android:max="100"
+         />
+         <TextView
+           android:id="@+id/carb_progress_percent"
+           android:text="@string/nutrient_progress"
+           android:textStyle="bold"
+           android:padding="3dip" />
+   </TableRow>
+   <TableRow>
+       <TextView
+           android:id="@+id/totalfat_progress_grams"
+           android:text="@string/totalfat"
+           android:textStyle="bold"
+           android:padding="3dip" />
+           
+     <ProgressBar android:id="@+id/progress_fat"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="200dip"
+        android:max="100"
+         />
+         <TextView
+           android:id="@+id/totalfat_progress_percent"
+           android:text="@string/nutrient_progress"
+           android:textStyle="bold"
+           android:padding="3dip" />
+   </TableRow>
+   <TableRow>
+       <TextView
+           android:id="@+id/fiber_progress_grams"
+           android:text="@string/fiber"
+           android:textStyle="bold"
+           android:padding="3dip" />
+           
+     <ProgressBar android:id="@+id/progress_fiber"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="200dip"
+        android:max="100"
+         />
+         <TextView
+           android:id="@+id/fiber_progress_percent"
+           android:text="@string/nutrient_progress"
+           android:textStyle="bold"
+           android:padding="3dip" />
+   </TableRow>
+   <TableRow>
+       <TextView
+           android:id="@+id/cholesterol_progress_grams"
+           android:text="@string/cholesterol"
+           android:textStyle="bold"
+           android:padding="3dip" />
+           
+     <ProgressBar android:id="@+id/progress_cholesterol"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="200dip"
+        android:max="100"
+         />
+         <TextView
+           android:id="@+id/cholesterol_progress_percent"
+           android:text="@string/nutrient_progress"
+           android:textStyle="bold"
+           android:padding="3dip" />
+   </TableRow>
+
+
+</TableLayout>
+</ScrollView>

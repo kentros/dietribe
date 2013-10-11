@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_horizontal"
+                android:scrollbars="vertical|horizontal"> 
+<!-- 
+ * Copyright (C) 2007 Google Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<LinearLayout android:id="@+id/banner"
+            android:layout_width="fill_parent"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:orientation="horizontal"
+            android:background="@android:drawable/bottom_bar"
+            android:padding="0dip"
+            android:gravity="center_vertical"
+            android:baselineAligned="false"
+        >
+
+            <FrameLayout
+                android:layout_width="58dip"
+                android:layout_height="58dip"
+                android:layout_marginLeft="6dip"
+                android:layout_marginRight="10dip"
+            >
+                <Button android:id="@+id/photoButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/addPicture"
+                    android:gravity="center"
+                />
+
+                <ImageView android:id="@+id/photoImage"
+                    style="?android:attr/imageWellStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/border"
+                />
+            </FrameLayout>
+
+            <EditText android:id="@+id/meal_item_name"
+            	android:lines="2"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dip"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:capitalize="words"
+                android:hint="@string/ghostData_name"
+            />
+
+            <ImageView android:id="@+id/star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            />
+        </LinearLayout>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+    <TableRow>
+		<TextView
+            android:text="@string/amount"
+            android:padding="1dip" />
+        <EditText android:id="@+id/manual_entry_amount"
+           android:text=""
+           android:digits="0123456789."
+           android:singleLine="true"
+           android:padding="1dip" />
+        <TextView
+            android:id="@+id/serving_name"
+            android:text="@string/serving"
+            android:padding="1dip"
+            android:textStyle="bold" />
+    </TableRow>
+    
+    
+    <!--  <TableRow>
+        <TextView
+            android:text="@string/measure"
+            android:padding="1dip" />
+        <AutoCompleteTextView android:id="@+id/measure"
+            android:layout_span="4"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:padding="1dip" />
+    </TableRow> 
+
+    <TableRow>
+        <TextView
+            android:text="@string/food_group"
+            android:padding="1dip" />
+        <Button android:id="@+id/manual_foodgroups"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:padding="1dip" />
+    </TableRow> -->
+    
+    <TableRow>
+        <TextView
+            android:text="@string/calories"
+            android:padding="1dip"
+            android:textStyle="bold" />
+        <EditText android:id="@+id/calories"
+           android:text=""
+           android:digits="0123456789"
+           android:padding="1dip" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="@string/totalfat"
+            android:padding="1dip"
+            android:textStyle="bold" />
+        <EditText android:id="@+id/totalfat"
+           android:text=""
+           android:digits="0123456789."
+           android:padding="1dip"
+           android:singleLine="true" />
+    </TableRow>
+    
+    <TableRow>
+        <TextView
+            android:text="@string/totalcarb"
+            android:padding="1dip"
+            android:textStyle="bold" />
+        <EditText android:id="@+id/totalcarb"
+           android:text=""
+           android:digits="0123456789."
+           android:padding="1dip" />
+    </TableRow>
+    
+    <TableRow>
+        <TextView android:id="@+id/satfatlabel"
+            android:text="@string/satfat_abbrev"
+            android:padding="1dip" />
+        <EditText android:id="@+id/satfat"
+           android:text=""
+           android:digits="0123456789."
+           android:padding="1dip"
+           android:singleLine="true" />
+    </TableRow>
+    
+    <TableRow>
+        <TextView
+            android:text="@string/fiber"
+            android:padding="1dip" />
+        <EditText android:id="@+id/fiber"
+           android:text=""
+           android:digits="0123456789."
+           android:padding="1dip" />
+    </TableRow>
+    
+    <TableRow>
+        <TextView android:id="@+id/transfatlabel"
+            android:text="@string/transfat"
+            android:padding="1dip" />
+        <EditText android:id="@+id/transfat"
+           android:text=""
+           android:digits="0123456789."
+           android:padding="1dip"
+           android:singleLine="true" />
+    </TableRow>
+    
+    <TableRow>
+        <TextView
+            android:text="@string/sugars"
+            android:padding="1dip" />
+        <EditText android:id="@+id/sugars"
+           android:text=""
+           android:digits="0123456789."
+           android:padding="1dip" />
+    </TableRow>
+    
+    <TableRow>
+        <TextView
+            android:text="@string/cholesterol"
+            android:padding="1dip"
+            android:textStyle="bold" />
+        <EditText android:id="@+id/cholesterol"
+           android:text=""
+           android:digits="0123456789."
+           android:padding="1dip"
+           android:singleLine="true" />
+    </TableRow>
+    
+    <TableRow>
+        <TextView
+            android:text="@string/sodium"
+            android:padding="1dip"
+            android:textStyle="bold" />
+        <EditText android:id="@+id/sodium"
+           android:text=""
+           android:digits="0123456789."
+           android:padding="1dip" />
+    </TableRow>
+    
+    <TableRow>
+        <TextView
+            android:text="@string/potassium"
+            android:padding="1dip"
+            android:textStyle="bold" />
+        <EditText android:id="@+id/potassium"
+           android:text=""
+           android:digits="0123456789."
+           android:padding="1dip"
+           android:singleLine="true" />
+    </TableRow>
+    
+    <TableRow>
+        <TextView
+            android:text="@string/protein"
+            android:padding="1dip"
+            android:textStyle="bold" />
+        <EditText android:id="@+id/protein"
+           android:digits="0123456789."
+           android:text=""
+           android:padding="1dip" />
+    </TableRow>
+    
+    <TableRow>
+        <TextView
+            android:text="@string/vitaminA"
+            android:padding="1dip" />
+        <EditText android:id="@+id/vitaminA"
+           android:digits="0123456789."
+           android:text=""
+           android:padding="1dip"
+           android:singleLine="true" />
+    </TableRow>
+    
+    <TableRow>
+        <TextView
+            android:text="@string/vitaminC"
+            android:padding="1dip" />
+        <EditText android:id="@+id/vitaminC"
+           android:digits="0123456789."
+           android:text=""
+           android:padding="1dip" />
+    </TableRow>
+    
+    <TableRow>
+        <TextView
+            android:text="@string/calcium"
+            android:padding="1dip" />
+        <EditText android:id="@+id/calcium"
+           android:digits="0123456789."
+           android:text=""
+           android:padding="1dip"
+           android:singleLine="true" />
+    </TableRow>
+    
+    <TableRow>
+        <TextView
+            android:text="@string/iron"
+            android:padding="1dip" />
+        <EditText android:id="@+id/iron"
+           android:digits="0123456789."
+           android:text=""
+           android:padding="1dip" />
+    </TableRow>
+</TableLayout>
+
+			<!-- The add more button -->
+            <Button android:id="@+id/addMore"
+                android:layout_width="fill_parent"
+                android:layout_height="?android:attr/listPreferredItemHeight"
+                android:layout_marginTop="3dip"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/moreinfo"
+                android:gravity="left|center_vertical"
+                android:drawableLeft="@android:drawable/ic_input_add"
+            />
+		<RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:layout_marginTop="1dip"
+            android:background="@android:drawable/bottom_bar"
+        >
+            <Button android:id="@+id/saveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:text="@string/save"
+                android:minWidth="120dip"
+                android:minHeight="48dip"
+            />
+
+            <Button android:id="@+id/discardButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:text="@string/discard"
+                android:minWidth="120dip"
+                android:minHeight="48dip"
+            />
+        </RelativeLayout>
+	
+</LinearLayout>
+</ScrollView>

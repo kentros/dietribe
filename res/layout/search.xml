@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/searchlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="3dip">
+
+    <Button
+        android:id="@+id/searchbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="3dip"
+        android:text="@string/search" />
+    <EditText
+        android:id="@+id/searchtext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/searchbutton"
+        android:singleLine="true" />
+        
+        <Spinner android:id="@+id/foodgroups"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_below="@id/searchbutton"
+        	android:drawSelectorOnTop="true" />
+        
+    <TextView android:id="@+id/resultsummary"
+          android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentRight="true"
+        	android:layout_below="@id/foodgroups" />
+	
+   	<ListView android:id="@+id/android:list"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/resultsummary"
+          android:layout_alignParentBottom="true"
+          android:gravity="bottom" />
+  	<TextView android:id="@+id/android:empty"
+          android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_below="@id/resultsummary"
+        	android:text="" />
+        	
+
+    
+
+
+    <!--
+        The Cancel button is aligned with the top of
+        the OK button and positioned to the left of it.
+        Since the OK button has a left margin of 10, there
+        is some space between the two buttons.
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeft="@id/ok"
+        android:layout_alignTop="@id/ok"
+        android:text="@string/relative_layout_2_cancel" /> -->
+
+</RelativeLayout>

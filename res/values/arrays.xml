@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<array name="food_group_items">
+		<item>All Food Groups</item>
+		<item>Beverages</item>
+		<item>Dairy</item>
+		<item>Fast Food</item>
+        <item>Fruits</item>
+        <item>Grains</item>
+        <item>Meat and Beans</item>
+        <item>Oils</item>
+        <item>Snacks</item>
+        <item>Vegetables</item>  
+</array>
+<array name="select_dialog_items">
+        <item>Database</item>
+        <item>Previous Entry</item>
+        <item>Fast Food Menu</item>
+        <item>Manual Entry</item>  
+</array>
+<array name="select_exercise_dialog_items">
+        <item>Strength Training</item>
+        <item>Cardio</item>
+        <item>Activity</item>  
+</array>
+<array name="months">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item> 
+        <item>June</item> 
+        <item>July</item> 
+        <item>August</item> 
+        <item>September</item> 
+        <item>October</item> 
+        <item>November</item> 
+        <item>December</item> 
+</array>
+<array name="activity_levels">
+	<item>Sedentary</item>
+	<item>Light Activity</item>
+	<item>Moderate Activity</item>
+	<item>Very Active</item>
+	<item>Extremely Active</item>
+</array>
+<array name="genders">
+	<item>Female</item>
+	<item>Male</item>
+</array>
+<array name="fast_food_stores">
+    		<item>Burger King</item>
+    		<item>Domino\'s Pizza</item>
+    		<item>Kentucky Fried Chicken</item>
+    		<item>Little Caesars</item>
+    		<item>McDonald\'s</item>
+    		<item>Papa John\'s Pizza</item>
+    		<item>Pizza Hut</item>
+    		<item>Popeyes</item>
+    		<item>Taco Bell</item>
+    		<item>Wendy\'s</item>
+</array>
+<array name="main_list_options">
+	<item>Edit</item>
+	<item>View Label</item>
+	<item>Remove</item>
+</array>
+</resources>
